@@ -6,7 +6,7 @@
 #include <windows.h>
 #include <iostream>
 #define pi 3.1415926535897932384626433832795028841971
-#define receiverH 13.0
+#define receiverH 13.01
 curandGenerator_t *RandomGenerator::gen;
 
 using namespace std;
