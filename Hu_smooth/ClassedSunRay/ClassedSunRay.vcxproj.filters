@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{74288dc0-e7bd-4d1b-b652-bdca8cac1b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{fb90e5e0-5632-4f2b-8729-167cea0b6f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1b67364d-2903-41b9-8933-08cb06db6665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{d6b6a73c-ec77-4cf5-8e12-fc6cda265e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcess">
+      <UniqueIdentifier>{459657a5-e7b5-448d-b8c1-bf651fef420b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PreProcess">
+      <UniqueIdentifier>{0322dca0-7279-4acc-b595-3216c119b3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracing">
+      <UniqueIdentifier>{86ce5839-0acb-496e-9b35-3ba3a93e5a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracing\RectGrid">
+      <UniqueIdentifier>{94929d54-c931-4efb-a3c4-5a7d3266f569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracing\RectHelio">
+      <UniqueIdentifier>{c73b1c80-266f-418f-888f-9d3f2c97f838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracing\StepsForTracing">
+      <UniqueIdentifier>{3a76c518-6153-4fc5-ac34-b1554f00cd19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="grid.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="random_generator.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="sunray.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="common_var.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="solar_scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene_file_proc.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="global_function.cuh">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="global_constant.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_arithmetic.cuh">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="receiver.cuh">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="heliostat.cuh">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="destroy.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="scene_instance_process.h">
+      <Filter>PreProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="ray_tracing.h">
+      <Filter>RayTracing</Filter>
+    </ClInclude>
+    <ClInclude Include="rectgrid_raytracing.cuh">
+      <Filter>RayTracing\RectGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="recthelio_tracing.h">
+      <Filter>RayTracing\RectHelio</Filter>
+    </ClInclude>
+    <ClInclude Include="image_save.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="steps_for_raytracing.h">
+      <Filter>RayTracing\StepsForTracing</Filter>
+    </ClInclude>
+    <ClInclude Include="poisson_disk.cuh">
+      <Filter>RayTracing\StepsForTracing</Filter>
+    </ClInclude>
+    <ClInclude Include="compact_sample.cuh">
+      <Filter>RayTracing\StepsForTracing</Filter>
+    </ClInclude>
+    <ClInclude Include="heap.cuh">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="image_smooth.cuh">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="scene_normals.h" />
+    <ClInclude Include="Gtest.cuh">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="SPA.h">
+      <Filter>test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="solar_scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="common_var.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="scene_file_proc.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="receiver.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="heliostat.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="grid.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="random_generator.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="scene_instance_process.cpp">
+      <Filter>PreProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="recthelio_tracing.cpp">
+      <Filter>RayTracing\RectHelio</Filter>
+    </ClCompile>
+    <ClCompile Include="image_save.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="scene_normals.cpp" />
+    <ClCompile Include="main.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="SPA.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="random_generator.cu">
+      <Filter>DataStructure</Filter>
+    </CudaCompile>
+    <CudaCompile Include="scene_instance_process.cu">
+      <Filter>PreProcess</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ray_tracing.cu">
+      <Filter>RayTracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="rectgrid_raytracing.cu">
+      <Filter>RayTracing\RectGrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="steps_for_raytracing.cu">
+      <Filter>RayTracing\StepsForTracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="poisson_disk.cu">
+      <Filter>RayTracing\StepsForTracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="compact_sample.cu">
+      <Filter>RayTracing\StepsForTracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="image_smooth.cu">
+      <Filter>PostProcess</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Gtest.cu">
+      <Filter>test</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
